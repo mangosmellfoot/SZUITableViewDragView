@@ -1,0 +1,613 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BFA25EBEC88B768DE199683E /* Pods_DraggingView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9145C9865FD87EC19A2BB24E /* Pods_DraggingView.framework */; };
+		CD36D3901D3E003C00BFB001 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CD36D38F1D3E003C00BFB001 /* main.m */; };
+		CD36D3931D3E003C00BFB001 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD36D3921D3E003C00BFB001 /* AppDelegate.m */; };
+		CD36D3961D3E003C00BFB001 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD36D3951D3E003C00BFB001 /* ViewController.m */; };
+		CD36D3991D3E003C00BFB001 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD36D3971D3E003C00BFB001 /* Main.storyboard */; };
+		CD36D39B1D3E003C00BFB001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD36D39A1D3E003C00BFB001 /* Assets.xcassets */; };
+		CD36D39E1D3E003C00BFB001 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD36D39C1D3E003C00BFB001 /* LaunchScreen.storyboard */; };
+		CD36D3A91D3E003C00BFB001 /* DraggingViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD36D3A81D3E003C00BFB001 /* DraggingViewTests.m */; };
+		CD36D3B41D3E003C00BFB001 /* DraggingViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD36D3B31D3E003C00BFB001 /* DraggingViewUITests.m */; };
+		CDC4787C1D3F564900E993B3 /* SZTableDragView.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC4787B1D3F564900E993B3 /* SZTableDragView.m */; };
+		CDC4787F1D3F58AE00E993B3 /* UITableView+SZDragLoadView.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC4787E1D3F58AE00E993B3 /* UITableView+SZDragLoadView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CD36D3A51D3E003C00BFB001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD36D3831D3E003C00BFB001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD36D38A1D3E003C00BFB001;
+			remoteInfo = DraggingView;
+		};
+		CD36D3B01D3E003C00BFB001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD36D3831D3E003C00BFB001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD36D38A1D3E003C00BFB001;
+			remoteInfo = DraggingView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6A364735359F9D1CA724EE33 /* Pods-DraggingView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DraggingView.release.xcconfig"; path = "Pods/Target Support Files/Pods-DraggingView/Pods-DraggingView.release.xcconfig"; sourceTree = "<group>"; };
+		9145C9865FD87EC19A2BB24E /* Pods_DraggingView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DraggingView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD36D38B1D3E003C00BFB001 /* DraggingView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DraggingView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD36D38F1D3E003C00BFB001 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CD36D3911D3E003C00BFB001 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CD36D3921D3E003C00BFB001 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CD36D3941D3E003C00BFB001 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CD36D3951D3E003C00BFB001 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CD36D3981D3E003C00BFB001 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CD36D39A1D3E003C00BFB001 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CD36D39D1D3E003C00BFB001 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CD36D39F1D3E003C00BFB001 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD36D3A41D3E003C00BFB001 /* DraggingViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DraggingViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD36D3A81D3E003C00BFB001 /* DraggingViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DraggingViewTests.m; sourceTree = "<group>"; };
+		CD36D3AA1D3E003C00BFB001 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD36D3AF1D3E003C00BFB001 /* DraggingViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DraggingViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD36D3B31D3E003C00BFB001 /* DraggingViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DraggingViewUITests.m; sourceTree = "<group>"; };
+		CD36D3B51D3E003C00BFB001 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDC4787A1D3F564900E993B3 /* SZTableDragView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SZTableDragView.h; sourceTree = "<group>"; };
+		CDC4787B1D3F564900E993B3 /* SZTableDragView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SZTableDragView.m; sourceTree = "<group>"; };
+		CDC4787D1D3F58AE00E993B3 /* UITableView+SZDragLoadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+SZDragLoadView.h"; sourceTree = "<group>"; };
+		CDC4787E1D3F58AE00E993B3 /* UITableView+SZDragLoadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+SZDragLoadView.m"; sourceTree = "<group>"; };
+		F3B733B1B3ECBFFA6E86703F /* Pods-DraggingView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DraggingView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DraggingView/Pods-DraggingView.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD36D3881D3E003C00BFB001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFA25EBEC88B768DE199683E /* Pods_DraggingView.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD36D3A11D3E003C00BFB001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD36D3AC1D3E003C00BFB001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5F3E3E27BDA5AE7F20358B63 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F3B733B1B3ECBFFA6E86703F /* Pods-DraggingView.debug.xcconfig */,
+				6A364735359F9D1CA724EE33 /* Pods-DraggingView.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		867DF8C665AF4C8933A253E9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9145C9865FD87EC19A2BB24E /* Pods_DraggingView.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CD36D3821D3E003C00BFB001 = {
+			isa = PBXGroup;
+			children = (
+				CD36D38D1D3E003C00BFB001 /* DraggingView */,
+				CD36D3A71D3E003C00BFB001 /* DraggingViewTests */,
+				CD36D3B21D3E003C00BFB001 /* DraggingViewUITests */,
+				CD36D38C1D3E003C00BFB001 /* Products */,
+				5F3E3E27BDA5AE7F20358B63 /* Pods */,
+				867DF8C665AF4C8933A253E9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CD36D38C1D3E003C00BFB001 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD36D38B1D3E003C00BFB001 /* DraggingView.app */,
+				CD36D3A41D3E003C00BFB001 /* DraggingViewTests.xctest */,
+				CD36D3AF1D3E003C00BFB001 /* DraggingViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD36D38D1D3E003C00BFB001 /* DraggingView */ = {
+			isa = PBXGroup;
+			children = (
+				CD36D3911D3E003C00BFB001 /* AppDelegate.h */,
+				CD36D3921D3E003C00BFB001 /* AppDelegate.m */,
+				CD36D3941D3E003C00BFB001 /* ViewController.h */,
+				CD36D3951D3E003C00BFB001 /* ViewController.m */,
+				CDC4787A1D3F564900E993B3 /* SZTableDragView.h */,
+				CDC4787B1D3F564900E993B3 /* SZTableDragView.m */,
+				CDC4787D1D3F58AE00E993B3 /* UITableView+SZDragLoadView.h */,
+				CDC4787E1D3F58AE00E993B3 /* UITableView+SZDragLoadView.m */,
+				CD36D3971D3E003C00BFB001 /* Main.storyboard */,
+				CD36D39A1D3E003C00BFB001 /* Assets.xcassets */,
+				CD36D39C1D3E003C00BFB001 /* LaunchScreen.storyboard */,
+				CD36D39F1D3E003C00BFB001 /* Info.plist */,
+				CD36D38E1D3E003C00BFB001 /* Supporting Files */,
+			);
+			path = DraggingView;
+			sourceTree = "<group>";
+		};
+		CD36D38E1D3E003C00BFB001 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CD36D38F1D3E003C00BFB001 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CD36D3A71D3E003C00BFB001 /* DraggingViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				CD36D3A81D3E003C00BFB001 /* DraggingViewTests.m */,
+				CD36D3AA1D3E003C00BFB001 /* Info.plist */,
+			);
+			path = DraggingViewTests;
+			sourceTree = "<group>";
+		};
+		CD36D3B21D3E003C00BFB001 /* DraggingViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CD36D3B31D3E003C00BFB001 /* DraggingViewUITests.m */,
+				CD36D3B51D3E003C00BFB001 /* Info.plist */,
+			);
+			path = DraggingViewUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CD36D38A1D3E003C00BFB001 /* DraggingView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD36D3B81D3E003C00BFB001 /* Build configuration list for PBXNativeTarget "DraggingView" */;
+			buildPhases = (
+				679B64FEF4D6CEF89303354B /* [CP] Check Pods Manifest.lock */,
+				CD36D3871D3E003C00BFB001 /* Sources */,
+				CD36D3881D3E003C00BFB001 /* Frameworks */,
+				CD36D3891D3E003C00BFB001 /* Resources */,
+				1712F661540DC9A29C3627D6 /* [CP] Embed Pods Frameworks */,
+				0DAE680A6FDFFFF3E359F6C2 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DraggingView;
+			productName = DraggingView;
+			productReference = CD36D38B1D3E003C00BFB001 /* DraggingView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CD36D3A31D3E003C00BFB001 /* DraggingViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD36D3BB1D3E003C00BFB001 /* Build configuration list for PBXNativeTarget "DraggingViewTests" */;
+			buildPhases = (
+				CD36D3A01D3E003C00BFB001 /* Sources */,
+				CD36D3A11D3E003C00BFB001 /* Frameworks */,
+				CD36D3A21D3E003C00BFB001 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD36D3A61D3E003C00BFB001 /* PBXTargetDependency */,
+			);
+			name = DraggingViewTests;
+			productName = DraggingViewTests;
+			productReference = CD36D3A41D3E003C00BFB001 /* DraggingViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CD36D3AE1D3E003C00BFB001 /* DraggingViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD36D3BE1D3E003C00BFB001 /* Build configuration list for PBXNativeTarget "DraggingViewUITests" */;
+			buildPhases = (
+				CD36D3AB1D3E003C00BFB001 /* Sources */,
+				CD36D3AC1D3E003C00BFB001 /* Frameworks */,
+				CD36D3AD1D3E003C00BFB001 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD36D3B11D3E003C00BFB001 /* PBXTargetDependency */,
+			);
+			name = DraggingViewUITests;
+			productName = DraggingViewUITests;
+			productReference = CD36D3AF1D3E003C00BFB001 /* DraggingViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD36D3831D3E003C00BFB001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = zhaotai;
+				TargetAttributes = {
+					CD36D38A1D3E003C00BFB001 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					CD36D3A31D3E003C00BFB001 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = CD36D38A1D3E003C00BFB001;
+					};
+					CD36D3AE1D3E003C00BFB001 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = CD36D38A1D3E003C00BFB001;
+					};
+				};
+			};
+			buildConfigurationList = CD36D3861D3E003C00BFB001 /* Build configuration list for PBXProject "DraggingView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CD36D3821D3E003C00BFB001;
+			productRefGroup = CD36D38C1D3E003C00BFB001 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD36D38A1D3E003C00BFB001 /* DraggingView */,
+				CD36D3A31D3E003C00BFB001 /* DraggingViewTests */,
+				CD36D3AE1D3E003C00BFB001 /* DraggingViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD36D3891D3E003C00BFB001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD36D39E1D3E003C00BFB001 /* LaunchScreen.storyboard in Resources */,
+				CD36D39B1D3E003C00BFB001 /* Assets.xcassets in Resources */,
+				CD36D3991D3E003C00BFB001 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD36D3A21D3E003C00BFB001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD36D3AD1D3E003C00BFB001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0DAE680A6FDFFFF3E359F6C2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DraggingView/Pods-DraggingView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1712F661540DC9A29C3627D6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DraggingView/Pods-DraggingView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		679B64FEF4D6CEF89303354B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD36D3871D3E003C00BFB001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD36D3961D3E003C00BFB001 /* ViewController.m in Sources */,
+				CD36D3931D3E003C00BFB001 /* AppDelegate.m in Sources */,
+				CD36D3901D3E003C00BFB001 /* main.m in Sources */,
+				CDC4787F1D3F58AE00E993B3 /* UITableView+SZDragLoadView.m in Sources */,
+				CDC4787C1D3F564900E993B3 /* SZTableDragView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD36D3A01D3E003C00BFB001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD36D3A91D3E003C00BFB001 /* DraggingViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD36D3AB1D3E003C00BFB001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD36D3B41D3E003C00BFB001 /* DraggingViewUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CD36D3A61D3E003C00BFB001 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD36D38A1D3E003C00BFB001 /* DraggingView */;
+			targetProxy = CD36D3A51D3E003C00BFB001 /* PBXContainerItemProxy */;
+		};
+		CD36D3B11D3E003C00BFB001 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD36D38A1D3E003C00BFB001 /* DraggingView */;
+			targetProxy = CD36D3B01D3E003C00BFB001 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CD36D3971D3E003C00BFB001 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD36D3981D3E003C00BFB001 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CD36D39C1D3E003C00BFB001 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD36D39D1D3E003C00BFB001 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CD36D3B61D3E003C00BFB001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CD36D3B71D3E003C00BFB001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CD36D3B91D3E003C00BFB001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3B733B1B3ECBFFA6E86703F /* Pods-DraggingView.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DraggingView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhaotaiapp.DraggingView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CD36D3BA1D3E003C00BFB001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A364735359F9D1CA724EE33 /* Pods-DraggingView.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DraggingView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhaotaiapp.DraggingView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CD36D3BC1D3E003C00BFB001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DraggingViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhaotaiapp.DraggingViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DraggingView.app/DraggingView";
+			};
+			name = Debug;
+		};
+		CD36D3BD1D3E003C00BFB001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DraggingViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhaotaiapp.DraggingViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DraggingView.app/DraggingView";
+			};
+			name = Release;
+		};
+		CD36D3BF1D3E003C00BFB001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DraggingViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhaotaiapp.DraggingViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DraggingView;
+			};
+			name = Debug;
+		};
+		CD36D3C01D3E003C00BFB001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DraggingViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhaotaiapp.DraggingViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DraggingView;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD36D3861D3E003C00BFB001 /* Build configuration list for PBXProject "DraggingView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD36D3B61D3E003C00BFB001 /* Debug */,
+				CD36D3B71D3E003C00BFB001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD36D3B81D3E003C00BFB001 /* Build configuration list for PBXNativeTarget "DraggingView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD36D3B91D3E003C00BFB001 /* Debug */,
+				CD36D3BA1D3E003C00BFB001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD36D3BB1D3E003C00BFB001 /* Build configuration list for PBXNativeTarget "DraggingViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD36D3BC1D3E003C00BFB001 /* Debug */,
+				CD36D3BD1D3E003C00BFB001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD36D3BE1D3E003C00BFB001 /* Build configuration list for PBXNativeTarget "DraggingViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD36D3BF1D3E003C00BFB001 /* Debug */,
+				CD36D3C01D3E003C00BFB001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CD36D3831D3E003C00BFB001 /* Project object */;
+}
